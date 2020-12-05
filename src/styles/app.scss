@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155,155,155, .5) transparent;
+  font-family: 'Lato', sans-serif;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155,155,155, .5);
+  border-radius: 20px;
+  border: transparent;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(54,54,54);
+}
+
+h3,
+h4 {
+  font-weight: 400;
+  color: rgb(100, 100, 100);
+}
+
+.App {
+  transition: all .5s ease;
+}
+
+.library-active {
+  margin-left: 30%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@import "./song";
+@import "./player";
+@import "./library";
+@import "./nav";
+@import "./media";
