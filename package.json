@@ -15,11 +15,14 @@
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
+  "homepage": "http://m-marc.github.io/react-music-player",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "uuid": "^8.3.1"
   }
 }
